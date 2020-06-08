@@ -1,0 +1,153 @@
+
+
+/*create a switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 15px;
+  left: 4px;
+  bottom: 2.25px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*Create checkbox*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+div.fixed {
+  position: fixed;
+  bottom: 76;
+  right: 30;
+  width: 200px;
+  border: 3px solid #363332;
+}
+.center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+#Switch{width:90%;  float:right }
+#ThongSo{ border: 3px solid #363332;
+  position: absolute;
+  left: 5%;
+  width: 40%;
+  text-align: center;
+  font-size: 18px;
+  float:left;
+background-color: #5a8a83}
+#checkbox{width: 90%; float:right}
+#HieuChinh{border: 3px solid #363332;
+ position: absolute;
+  left: 50%;
+  width: 40%;S
+  font-size: 18px; 
+  float: right;
+background-color: #e0a014}
+
+/*#BangTay{width:50%; float:left;}
+#TuDong{width: 50%;float:right;}*/
+#MayBom{width:30%; float:left}
+#PhunThuoc{width:90%;float:right}
+/*#Khoi2{border: 3px solid #363332;
+  width: 40%; float:bottom; }*/
+  #chartContainer{height: 370px; width: 45%; position: absolute; 
+bottom: 0;background-color:#87847b}
+#chartContainer1{height: 370px; width: 45%; position: absolute; 
+bottom: 0;right:0;background-color:#87847b}
+#NhietDo{background-color: #1fb6db}
+#DoAm{background-color: #1fb6db}
+#Khoi2{border: 3px solid #363332}

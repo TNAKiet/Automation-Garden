@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SmartHome</title>
+	<script src="socket.io/socket.io.js"></script>
+	<script src = "jquery.js"></script>
+	<script src ="xuli.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="layout.css" />
+	
+
+</head>
+
+
+<body>
+
+	<div id="Khoi1">
+		<div id="ThongSo">
+			<h1>Nhiệt độ và độ ẩm</h1>
+			<h2>Nhiệt độ</h2><div id="NhietDo">&#176;C</div>
+			<h2>Độ ẩm</h2><div id="DoAm">%</div>
+		</div>
+		<div id="HieuChinh",class="center">
+			<div id="checkbox">
+
+				<h1>Chế độ</h1>
+
+				<label class="container" id=BangTay>Bằng tay
+  					<input type="radio" checked="checked" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				
+				<label class="container" id="TuDong">Tự động
+ 					 <input type="radio" name="radio">
+  					<span class="checkmark"></span>
+				</label>
+				
+			</div>
+		<div id="Switch">
+			
+			
+			
+			<h2>Máy bơm</h2>
+			<label class="switch" >
+  			<input type="checkbox" id="MayBom">
+  			<span class="slider round"></span>
+			</label>
+			
+			
+			<h2>Phun thuốc</h2>
+			<label class="switch">
+			<input type="checkbox" id="PhunThuoc">
+			<span class="slider round"></span>
+			</label>
+			
+			</div>
+			
+			</div>
+
+	</div>
+
+	<div id="Khoi2">
+	
+<div id="chartContainer" ></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <div id="chartContainer1" ></div>     
+
+	</div>
+</body>
+</html>
